@@ -41,6 +41,7 @@ def py_proto_library(
     deps = [],
     py_proto_deps = [],
     verbose = 0,
+    root = "",
     **kwargs):
 
   proto_compile_args += {
@@ -55,6 +56,7 @@ def py_proto_library(
     "output_to_workspace": output_to_workspace,
     "verbose": verbose,
     "with_grpc": with_grpc,
+    "root": root,
   }
 
   if protoc:
